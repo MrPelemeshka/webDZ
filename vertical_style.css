@@ -2,11 +2,32 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
 }
 
 div {
     position: relative;
+}
+
+.share {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #ecf0f1;
+}
+
+.share b {
+    margin-right: 15px;
+    font-weight: normal;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+
+.icon-vk svg:hover line {
+    stroke: red;
 }
 
 .clear {
