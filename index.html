@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css">
-    <title>Start</title>
+    <title>Aqua - вход</title>
 </head>
 
 <body>
@@ -17,49 +17,51 @@
         </div>
         <div>
             <object type="img/logo.svg.png" data="SvgImg.svg" width="150" height="150">
-          <img src="img/logo.svg.png" width="150" height="150" alt="logo" />
+          <img src="img/logo.svg.svg" width="150" height="150" alt="logo" />
         </object>
         </div>
     </header>
     <div class="container">
-        <form action="">
+        <form action="game.html">
             <div>
                 <label for="">Введите логин:</label>
                 <input required type="login" pattern="[ A-Za-z]{6,12}" id="login" name="login" placeholder="Логин" title="Логин должен содержать только буквы латинского алфавита в верхнем или нижнем регистре и длиной не менее 6 символов и не более 12" />
             </div>
             <div>
                 <label for="">Введите пароль:</label>
-                <input required type="text" id="password" name="password" placeholder="Пароль" title="Введите пароль" />
+                <input required type="password" id="password" name="password" placeholder="Пароль" title="Введите пароль" />
             </div>
             <div>
-                <button class="container__button">Вход</button>
+                <button type="submit" class="container__button"><a style="color:black; text-decoration: none;" href="game.html">Вход</a></button>
                 <button class="container__button">Восстановить пароль</button>
             </div>
             <div>
                 <button class="container__button">
-            <a href="registraition.html">Регистрация</a>
+            <a style=" color:black; text-decoration: none;" href="registraition.html">Регистрация</a>
           </button>
             </div>
         </form>
     </div>
-    <div>
+    <div class="discribe">
         <h1>Описание игры</h1>
-
-        <p class="discribe">
+        <p>
             Aqua - это аркадная игра в жанре арканоид, но в новой, оригинальной стилистике.
             </br> В вашем распоряжении рыба-шар, которая справится с любым морским обитателем, а в самых трудных ситуациях вас выручит морская мина!
         </p>
     </div>
     <footer>
-        <div class="flex-container">
-            <div class="flex-container__item">
-                <img src="img/animal-1299688_960_720.png" alt="Рыба" width="33%">
+        <div class=" flex-container ">
+            <div class="flex-container__item ">
+                <img src="img/animal-1299688_960_720.png" alt="Рыба" width="100">
             </div>
-            <div class="flex-container__item">
-                <img src="img/ocean-1296934_960_720.png" alt="Осьминог" width="33%">
+            <div class="flex-container__item ">
+                <img src="img/ocean-1296934_960_720.png" alt="Осьминог" width="100">
             </div>
-            <div class="flex-container__item">
-                <img src="img/sea-1162770_960_720.png" alt="Ракушка" width="33%">
+            <div class="flex-container__item ">
+                <img src="img/sea-1162770_960_720.png" alt="Ракушка" width="100">
+            </div>
+            <div class="flex-container__item ">
+                <img src="img/1b5f9637.png" alt="Звезда" width="100">
             </div>
         </div>
     </footer>
