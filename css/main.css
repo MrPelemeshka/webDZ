@@ -1,6 +1,6 @@
 body{
-	background: black;
-	color: white;
+	background: white;
+	color: black;
 	font-size: 1em;
 	font-weight: 600;
 }
@@ -16,6 +16,7 @@ option{
 }
 .columns_container{
 	margin: 20px 0 ;
+	page-break-before: always;
 }
 .columns_container:nth-child(1){
 	 background-color: #FFCC00;
@@ -32,6 +33,10 @@ option{
 .row > div > p{
   margin: 0;
 }
+. .pbb{
+	page-break-before: always;
+}
+
 
 .row > div:nth-child(2){
   background-color: #FFCC00;
