@@ -29,7 +29,7 @@
 }
 
 .ground {
-    height: 55vh;
+    height: 40vh;
 }
 
 .cloud {
@@ -48,6 +48,19 @@
 .sky {
     display: flex;
     flex-wrap: nowrap;
+}
+
+.rain {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.water {
+    width: 10%;
+    object-fit: contain;
+    margin-left: 5%;
+    animation: clouds 1s infinite;
+    transition-property: all;
 }
 
 .world {
