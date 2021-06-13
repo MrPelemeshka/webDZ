@@ -2,7 +2,7 @@
 
 
 /*Обнуление*/
-@import 'nullifier.scss';
+@use 'nullifier.scss';
 /*--------------------*/
 
 $light-red: color.adjust(red, $lightness: 20%);
