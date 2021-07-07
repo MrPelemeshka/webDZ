@@ -33,7 +33,8 @@ option{
 .row > div > p{
   margin: 0;
 }
-. .pbb{
+
+.pbb{
 	page-break-before: always;
 }
 
@@ -79,19 +80,15 @@ option{
      border: 2px solid black;
      box-shadow: none;
      padding: 10px;font-size: 1.5em;
-    
      color: yellow;
    }
    
 	.row > div:nth-child(2){
-		background-color: yellow;
-		border: 1px solid black;
 		box-shadow: none;
 	}
 	
 	/*МЕДИА ЗАПРОС ДЛЯ ПЕЧАТИ*/
 	@page{
-		
 		size: A4;
 		margin: 3cm;
 	}
