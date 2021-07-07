@@ -2,7 +2,7 @@
 
 
 /*Обнуление*/
-@use '_nullifier.scss';
+@use 'nullifier_partial.scss';
 /*--------------------*/
 
 $light-red: color.adjust(red, $lightness: 20%);
@@ -31,6 +31,7 @@ $colors: (
 		color: green;
 	}
 }
+
 .difference{
 	justify-content: center;
 	display: flex;
@@ -43,6 +44,7 @@ $colors: (
 		}
 	}
 }
+
 .more-dif{
 	p{
 		text-align: center;
@@ -53,8 +55,8 @@ $colors: (
 	&:hover{
 		background: rgba(255,0,0,0.1);
 	}
-
 }
+
 .square-wrapper{
 	margin-top: 1%;
 	display: flex;
@@ -76,27 +78,32 @@ $colors: (
 		}
 	}
 }
+
 .patterns{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+
 .link-1{
 	font-size: 2em;
 	margin: 20px 20px;
 	@extend %tipicalLink;
 }
+
 .link-2{
 	@include fontsize(2em, 600);
 	@extend %tipicalLink;
 }
+
 .math{
 	background: pink;
 	width: 300px / 960px * 100%;
 	height: 200px * 0.5;
 	margin-left: (100% - (300px / 960px * 100%))/2;
 }
+
 .map1{
 	background-color: map-get($colors, color1);
 	font-size: $fz;
@@ -105,14 +112,17 @@ $colors: (
 		font-size: $fz;
 	}
 }
+
 .map2{
 	background-color: map-get($colors, color2);
 	font-size: $fz;
 }
+
 .map3{
 	background-color: map-get($colors, color3);
 	font-size: $fz;
 }
+
 .colormodule{
 	background-color: $light-red;
 	color: $complement;
