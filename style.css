@@ -73,8 +73,84 @@ h1{
   grid-column: 1;
 }
 
-
 .parent {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+.grid-container {
+	display: grid; 
+	margin-top: 5px; 
+	padding: 10px; 
+	background: rgb(0,150,208); 
+	grid-template-rows: 30px 30px 30px 30px;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas: 'header header header header'
+                        'nav main main .' 
+                        'nav main main .' 
+                        'footer footer footer footer'; 
 }
+.grid-container > div { 
+	background: rgb(241,101,41);  /* цвет заднего фона */
+	border: 1px solid #000;  /* сплошная граница размером 1 пиксель черного цвета */
+	text-align: center;  /* горизонтальное выравнивание текста */
+} 
+.item-a {
+	grid-area: header;  /* задаем имя элемента */
+	background: red !important;  /* цвет заднего фона */
+}
+.item-b {
+  grid-area: main;  /* задаем имя элемента */
+	background: yellow !important;  /* цвет заднего фона */
+}
+.item-c {
+  grid-area: footer;  /* задаем имя элемента */
+	background: green !important;  /* цвет заднего фона */
+}
+.item-d {
+  grid-area: nav;  /* задаем имя элемента */
+	background: violet !important;  /* цвет заднего фона */
+}
+
+#con {
+  height:200px;
+  width: 230px;
+  place-items: center; 
+  background-color: #ccc;
+  }
+  .flex {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  #con > div {
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  #box1{
+  background-color: #666;
+  min-height: 40px;
+  }
+  #box2{
+  background-color: #1c87c9;
+  min-height: 50px;
+  }
+  #box3{
+  background-color: #fff;
+  min-height: 40px;
+  }
+  #box4{
+  background-color: #ff0000;
+  min-height: 60px;
+  }
+  #box5{
+  background-color: #eee;
+  min-height: 70px;
+  }
+  #box6{
+  background-color: #8ebf42;
+  min-height: 50px;
+  }
